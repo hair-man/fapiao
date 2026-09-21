@@ -18,11 +18,18 @@ A4 纵向批量打印电子发票（PDF / 图片）的桌面小工具，基于 P
 - 依赖：`PyQt5`、`pypdfium2`
 
 ```bash
-pip install PyQt5 pypdfium2
+pip install -r requirements.txt
 python invoice_printer.py [发票目录]
 ```
 
-也可以直接双击 `发票打印助手.bat`（需先按上面的路径修改 bat 中的 Python 与脚本路径）。
+## 打包成 exe（Windows）
+
+```bash
+pip install -r requirements.txt
+build.bat
+```
+
+生成 `dist\InvoicePrinter.exe`，单文件、无控制台窗口，可拷贝到任何 Windows 电脑直接双击运行（无需安装 Python）。
 
 ## 自测
 
